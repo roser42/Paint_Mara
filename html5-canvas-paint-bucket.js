@@ -46,14 +46,14 @@ var paintBucketApp = (function() {
         outlineImage = new Image(),
         swatchImage = new Image(),
         backgroundImage = new Image(),
-        swatchStartX = 18,
-        swatchStartY = 19,
+        swatchStartX = -20,
+        swatchStartY = 50,
         swatchImageWidth = 93,
         swatchImageHeight = 46,
-        drawingAreaX = 100,
-        drawingAreaY = 11,
-        drawingAreaWidth = 300,
-        drawingAreaHeight = 300,
+        drawingAreaX = 50,
+        drawingAreaY = 50,
+        drawingAreaWidth = 400,
+        drawingAreaHeight = 400,
         colorLayerData,
         outlineLayerData,
         totalLoadResources = 3,
@@ -101,8 +101,8 @@ var paintBucketApp = (function() {
             context.drawImage(backgroundImage, 0, 0, canvasWidth, canvasHeight);
 
             // Draw the color swatches
-            locX = 52;
-            locY = 19;
+            locX = -20;
+            locY = 50;
             drawColorSwatch(colorPurple, locX, locY);
 
             locY += 46;
