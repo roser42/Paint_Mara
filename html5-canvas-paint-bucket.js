@@ -20,8 +20,8 @@ var paintBucketApp = (function() {
     "use strict";
 
     var context,
-        canvasWidth = 490,
-        canvasHeight = 220,
+        canvasWidth = 500,
+        canvasHeight = 500,
         colorPurple = {
             r: 203,
             g: 53,
@@ -50,10 +50,10 @@ var paintBucketApp = (function() {
         swatchStartY = 19,
         swatchImageWidth = 93,
         swatchImageHeight = 46,
-        drawingAreaX = 111,
+        drawingAreaX = 100,
         drawingAreaY = 11,
-        drawingAreaWidth = 267,
-        drawingAreaHeight = 200,
+        drawingAreaWidth = 300,
+        drawingAreaHeight = 300,
         colorLayerData,
         outlineLayerData,
         totalLoadResources = 3,
@@ -307,6 +307,10 @@ var paintBucketApp = (function() {
             canvas.setAttribute('id', 'canvas');
             document.getElementById('canvasDiv').appendChild(canvas);
 
+            canvas.style.display = 'block';
+            canvas.style.margin = '0 auto';
+            canvas.style.top = '50%';
+
             if (typeof G_vmlCanvasManager !== "undefined") {
                 canvas = G_vmlCanvasManager.initElement(canvas);
             }
@@ -336,7 +340,7 @@ var paintBucketApp = (function() {
                 resourceLoaded();
             };
             //outlineImage.src = "images/watermelon-duck-outline.png";
-            outlineImage.src = "images/mara_1.png";
+            outlineImage.src = "images/mara_3.png";
         };
 
     return {
